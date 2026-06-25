@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Copa do Mundo — Brasil & o Futebol</title>
+<!-- Google Fonts (requer internet; funciona com Live Server ou online) -->
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Fallback caso o Google Fonts não carregue (sem internet) */
+  @import url('data:text/css,');
+</style>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -24,7 +29,7 @@
   body {
     background: var(--verde);
     color: var(--texto);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, Arial, sans-serif;
     overflow-x: hidden;
   }
 
@@ -65,7 +70,7 @@
     height: 64px;
   }
   .logo {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
     font-size: 1.6rem;
     color: var(--ouro);
     letter-spacing: 0.1em;
@@ -136,7 +141,7 @@
     z-index: 1;
   }
   .hero h1 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
     font-size: clamp(3.5rem, 12vw, 9rem);
     line-height: 0.92;
     color: var(--branco);
